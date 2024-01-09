@@ -1,0 +1,26 @@
+{
+  "name": "mycloud",
+  "version": "1.0.0",
+  "description": "a local cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aitortxu20/myCloud.git"
+  },
+  "author": "Aitor Ontibero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aitortxu20/myCloud/issues"
+  },
+  "homepage": "https://github.com/aitortxu20/myCloud#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1"
+  }
+}

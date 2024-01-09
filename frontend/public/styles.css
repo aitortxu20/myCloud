@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #444;
+    color: #eee;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #666;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .modal-content {
+    background-color: #333;
+    margin: 20% auto;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .upload-form {
+    display: none;
+  }
+  .button {
+    background-color: #3e3e3e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }  
+
+
