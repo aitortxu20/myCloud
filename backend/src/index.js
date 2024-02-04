@@ -7,22 +7,20 @@ app.use(express.json());
 app.use(cors());
 
 
-const uploadRoutes = require('./routes/upload'); // Importa el enrutador de subida de archivos
+const uploadRoutes = require('./routes/upload'); 
 const directoryRoutes = require('./routes/directoryRoutes');
 const createDir = require('./routes/createDir');
-//const downloadRoutes = require('./routes/download.js'); // Importa el enrutador de descarga de archivos
+const downloadRoute = require('./routes/downloadRoute');
 
 app.use(express.static('frontend/public'));
-app.use('/upload', uploadRoutes); // Monta las rutas de subida en /upload
+app.use('/upload', uploadRoutes);
 app.use('/uploads', directoryRoutes);
 app.use('/create-directory', createDir);
-
-
-// Otras configuraciones y middleware de tu aplicación...
+app.use('/download', downloadRoute);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
 
-//module.exports = app;
+

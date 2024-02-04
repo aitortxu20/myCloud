@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import ShowContent from './showContent';
 import DirectoryForm from './createDir';
 

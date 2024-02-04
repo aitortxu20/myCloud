@@ -2,9 +2,9 @@ const fs = require('fs').promises;
 const path = require('path');
 
 async function getDirectoryContent(dirPath) {
+    
     const fullPath = path.join(__dirname, '../../..', 'uploads/', dirPath);
     const items = await fs.readdir(fullPath);
-    console.log(`path content: ` + items)
     const content = { files: [], directories: [] };
 
     for (const item of items) {

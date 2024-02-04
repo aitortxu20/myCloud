@@ -23,13 +23,13 @@ function UploadForm() {
             formData.append('file', file);
             formData.append('pathToUpload', realPath);
             
-            const response = await axios.post('http://192.168.1.27:3001/upload', formData, {
+            const response = await axios.post('http://192.168.1.33:3001/upload', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data', 
             },
         });
-
-            console.log('File uploaded succesfully: ', response.data);
+        
+            window.location.replace(realPath);
 
         } catch (error) {
             console.error('Error while uploading file: ', error)

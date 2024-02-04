@@ -6,7 +6,7 @@ const fs = require('fs');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-         // Accede al valor de uploadPath
+
         cb(null, "tmp/");
     },
     filename: function (req, file, cb) {
@@ -27,13 +27,13 @@ router.post('/', upload.single('file'), (req, res) => {
     
     fs.rename(currentPath, newPath, (err) => {
         if (err) {
-          console.error('Error al mover el archivo:', err);
+          console.error('Error while moving file:', err);
         } else {
-          console.log('Archivo movido con éxito');
+          console.log('File successfully moved');
         }
     });
-    // Verifica si uploadPath tiene el valor esperado
-    res.send('Archivo subido correctamente.');
+    
+    res.send('File uploaded');
     
 });
 
